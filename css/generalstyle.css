@@ -1,0 +1,254 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+  overflow-x: hidden;
+}
+
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0px;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #610B0B;
+    /* background: #0B3B39; Color Verde */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #8A0808;
+    background: rgba(255,255,255,1);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #FFFFFF;
+    background: none;
+    /*background: rgba(138,8,8,1);*/
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #8A0808;
+    /*background: none;*/   
+    background: rgba(255,255,255,1);
+}
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+
+/* Tabs style */
+a {
+  color: #848484;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #2E2E2E;
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #FFFFFF;
+  background-color: #610B0B;
+}
+
+/* Pill style */
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #FFFFFF;
+  background-color: #610B0B;
+}
+
+/* input Styles */
+
+/* Label Input-Groups
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #0b614b;
+}
+*/
+
+/* Fondo de los glyficons*/
+
+.input-group-addon {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  color: #585858;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+/* Inputs focus */
+.form-control:focus {
+  border-color: #00B7FF;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 162, 255, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 162, 255, .6);
+}
+
+/* Text Areas*/
+textarea {
+  resize: vertical; /* user can resize vertically, but width is fixed */
+}
+
+/* Estilo de los Paneles */
+
+.panel-verde {
+  border-color: #ddd;
+}
+.panel-verde > .panel-heading {
+  color: #FFFFFF;
+  background-color: #0b614b;
+  border-color: #ddd;
+}
+.panel-verde > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ddd;
+}
+.panel-verde > .panel-heading .badge {
+  color: #FFFFFF;
+  background-color: #0b614b;
+}
+.panel-verde > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ddd;
+}
+
+
+
+
+.panel-rojo {
+  border-color: #ddd;
+}
+.panel-rojo > .panel-heading {
+  color: #FFFFFF;
+  background-color: #610B0B;
+  border-color: #ddd;
+}
+.panel-rojo > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ddd;
+}
+.panel-rojo > .panel-heading .badge {
+  color: #FFFFFF;
+  background-color: #610B0B;
+}
+.panel-rojo > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ddd;
+}
+.panel-rojo > .panel-footer{
+  background-color: transparent;
+  border-top: 1px solid #610B0B;
+}

@@ -1,0 +1,10 @@
+Cosas Listas
+	-Modulo Pacientes
+		Listo
+	-Modulo Especialistas
+		-Horarios
+			(Las fisioterapias no cambian de estado automaticamente junto con el registro del capta huellas)
+	-Modulo Configuración
+		-Pestaña Paciente (listo, se puede agregar,modificar y eliminar farmacos y tipos de pagos)
+Pendientes
+	-Modulo De Reportes
